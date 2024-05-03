@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <title>Starbucks Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="circle"></div>
+  <header>
+    <div class="left-side">
+      <a href="#"> <img src="img/logo.png" alt="Starbucks | Abhinash Pritiraj"> </a>
+    </div>
+    <div class="right-side">
+      <div class="nav-link-wrapper"> <a href="">Home</a> </div>
+      <div class="nav-link-wrapper"> <a href="https://www.starbucks.com/menu">Menu</a> </div>
+      <div class="nav-link-wrapper"> <a href="">What's New</a> </div>
+      <div class="nav-link-wrapper"> <a href="">Contact</a> </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="left-side">
+      <h1>It's not just Coffee <br>
+        It's <span class="green"> Starbucks </span>
+      </h1>
+      <p>It takes many hands to craft the perfect cup of coffee, from the farmers who tend to the red-ripe coffee
+        cherries, to the master roasters who coax the best from every bean, and to the barista who serves it with care.
+        We are committed to the highest standards of quality and service, embracing our heritage while innovating to
+        create new experiences to savor.</p>
+      <a href="">Learn More</a>
+    </div>
+    <div class="right-side">
+      <img src="img/img1.png" alt="" class="starbucks">
+      <div class="box">
+        <a href="#"> <img class="facebook" src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"> <img src="img/instagram.png" alt="Instagram"></a>
+        <a href="#"> <img src="img/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </div>
+  <div class="thumb">
+    <a href="#bottom"><img id="bottom" src="img/thumb1.png" onclick="imgSlider('img/img1.png'); change('green')"> </a>
+    <a href="#bottom"><img src="img/thumb2.png" onclick="imgSlider('img/img2.png'); change('#eb7495')"> </a>
+    <a href="#bottom"><img src="img/thumb3.png" onclick="imgSlider('img/img3.png'); change('#d752b1')"> </a>
+  </div>
+
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.starbucks').src = anything;
+    }
+
+    function change(color) {
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+</body>
+
+</html>
